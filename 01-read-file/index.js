@@ -7,7 +7,7 @@ const stream = fs.createReadStream(
   );
 
   stream.on('data', (data)=>console.log(data))
-  stream.on('error', (err)=>console.log(`Error: ${err.message}`))
+  stream.on('error', (err)=>console.log(`error: ${err}`))
 
 
 
